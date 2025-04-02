@@ -2,7 +2,7 @@
 
 
 :root {
-  font-family: Poppins, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, Avenir, Helvetica, Arial, Lato, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -29,6 +29,6 @@
   }
 
   .card {
-    @apply w-120 h-80 border md:w-70 md:h-100 rounded-[15px]
+    @apply bg-white w-120 h-80 border md:w-70 md:h-100 rounded-[15px] flex flex-col items-center gap-10 h-[100%] bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md
   }
 }

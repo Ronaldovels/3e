@@ -12,8 +12,8 @@ function App() {
     <>
           <NavBar/>
           <Hero/>
-          <About/>
           <Product/>
+          <About/>
           <Footer/>
     </>
   )

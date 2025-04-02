@@ -9,7 +9,7 @@ export default function navbar() {
     }
 
     return (
-        <div className="sticky top-0 z-10 shadow-md text-lg px-10 sticky">
+        <div className="sticky top-0 z-10 shadow-md text-lg px-10 sticky bg-white">
             <div className="flex items-center justify-between w-full h-20">
                 <div className="flex justify-start flex-1">
                     <a href="#"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
@@ -28,9 +28,9 @@ export default function navbar() {
                     onClick={toggleMenu}
                     aria-label="Toggle navigation menu"
                 >
-                    <span className={`block w-6 h-0.5 bg-black mb-1.5 transition-transform bg-[#94C3E9] ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`block w-6 h-0.5 bg-black mb-1.5 transition-opacity bg-[#94C3E9 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`block w-6 h-0.5 bg-black transition-transform bg-[#94C3E9 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    <span className={`block w-6 h-0.5 bg-[#011C6B]  mb-1.5 transition-transform ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                    <span className={`block w-6 h-0.5 bg-[#011C6B]  mb-1.5 transition-opacity ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+                    <span className={`block w-6 h-0.5 bg-[#011C6B]  transition-transform  ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                 </button>
             </div>
 
