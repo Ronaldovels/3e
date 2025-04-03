@@ -10,8 +10,8 @@ export default function navbar() {
 
     return (
         <div className="sticky top-0 z-10 shadow-md text-lg px-10 sticky bg-white">
-            <div className="flex items-center justify-between w-full h-20">
-                <div className="flex justify-start flex-1">
+            <div className="flex items-center justify-between w-full h-20 ">
+                <div className="flex justify-start flex-1 lg:flex-3">
                     <a href="#"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
                 </div>
 

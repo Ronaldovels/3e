@@ -4,6 +4,7 @@ import Footer from './components/footer.jsx'
 import Hero from './components/hero.jsx'
 import About from './components/about.jsx'
 import Product from './components/product.jsx'
+import Mission from './components/mission.jsx'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
           <NavBar/>
           <Hero/>
+          <Mission/>
           <Product/>
           <About/>
           <Footer/>
