@@ -25,10 +25,14 @@
 
 @layer components {
   .nav-hover-mob{
-    @apply hover:text-blue-900 duration-300 ease-in-out hover:font-bold border-b
+    @apply hover:scale-[1.1] text-blue-900 duration-300 ease-in-out font-bold border-b
+  }
+
+  .nav-desk {
+    @apply border-t-2 hover:scale-[1.1] duration-300 ease-in-out text-center pt-1 
   }
 
   .card {
-    @apply bg-white w-115 border md:w-70 md:h-100 rounded-[15px] flex flex-col items-center gap-10 lg:h-120 lg:w-75 md:h-120 md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md lg:p-0
+    @apply bg-white w-115 border md:w-70 md:h-100 rounded-[15px] flex flex-col items-center gap-10 lg:h-120 lg:w-75 md:h-120 md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md lg:p-0 
   }
 }

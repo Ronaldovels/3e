@@ -15,12 +15,12 @@ export default function navbar() {
                     <a href="#"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
                 </div>
 
-                <div className="hidden md:flex gap-6 flex-1 text-sm">
-                    <a href="#" className=''>Pagina Inicial</a>
-                    <a href="#">Quem Somos</a>
-                    <a href="#">Nossas Soluções</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Blog</a>
+                <div className="hidden md:flex gap-6 flex-1 text-sm font-semibold text-blue-900 text-xs w-[100%]">
+                    <a href="#" className='nav-desk w-[100%]'>Pagina Inicial</a>
+                    <a href="#" className='nav-desk w-[100%]'>Quem Somos</a>
+                    <a href="#" className='nav-desk w-[100%]'>Nossas Soluções</a>
+                    <a href="#" className='nav-desk w-[100%]'>Contato</a>
+                    <a href="#" className='nav-desk w-[100%]'>Blog</a>
                 </div>
 
                 <button
