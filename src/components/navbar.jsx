@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Logo3E from '../assets/logo.avif'
 import { use, useState } from 'react'
 export default function navbar() {
@@ -12,15 +13,15 @@ export default function navbar() {
         <div className="sticky top-0 z-10 shadow-md text-lg px-10 sticky bg-white">
             <div className="flex items-center justify-between w-full h-20 ">
                 <div className="flex justify-start flex-1 lg:flex-3">
-                    <a href="#"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
+                    <a href="/"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
                 </div>
 
                 <div className="hidden md:flex gap-6 flex-1 text-sm font-semibold text-blue-900 text-xs w-[100%]">
-                    <a href="#" className='nav-desk w-[100%]'>Pagina Inicial</a>
-                    <a href="#" className='nav-desk w-[100%]'>Quem Somos</a>
-                    <a href="#" className='nav-desk w-[100%]'>Nossas Soluções</a>
-                    <a href="#" className='nav-desk w-[100%]'>Contato</a>
-                    <a href="#" className='nav-desk w-[100%]'>Blog</a>
+                    <a href="/" className='nav-desk w-[100%]'>Pagina Inicial</a>
+                    <a href="/Sobre" className='nav-desk w-[100%]'>Quem Somos</a>
+                    <a href="/" className='nav-desk w-[100%]'>Nossas Soluções</a>
+                    <a href="/" className='nav-desk w-[100%]'>Contato</a>
+                    <a href="/" className='nav-desk w-[100%]'>Blog</a>
                 </div>
 
                 <button

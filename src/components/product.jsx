@@ -5,13 +5,13 @@
 export default function product() {
 
     return (
-        <div className="flex flex-col items-center h-[100%] md:h-[100%] lg:h-[100%] p-10  bg-[linear-gradient(to_bottom,#1A5F99_-50%,#011C6B_150%)]">
-            <h1 className="text-5xl font-extrabold text-center pb-10 text-white">NOSSOS SERVIÇOS</h1>
+        <div className="flex flex-col items-center h-[100%] md:h-[100%] lg:h-[100%] p-10 ">
+            <h1 className="text-5xl font-extrabold text-center pb-10 text-black">NOSSOS SERVIÇOS</h1>
 
             <div className="flex flex-col gap-10  lg:flex-row">
                 <button className="card  ">
                     <h1 className="text-center text-blue-900 font-bold text-2xl pt-5">Sistemas de Monitoramento</h1>
-                    <p className="text-center lg:text-sm"> Os Sistemas de Monitoramento são projetados para serem aplicados em ambientes industriais, de segurança, ambientais, entre outros proporcionando informações vitais para tomadas de decisão
+                    <p className="text-center lg:text-sm font-semibold"> Os Sistemas de Monitoramento são projetados para serem aplicados em ambientes industriais, de segurança, ambientais, entre outros proporcionando informações vitais para tomadas de decisão
                     </p>
                     <ul className="flex flex-col items-center w-100 lg:w-50">
                         <li className="list-disc text-justify lg:text-sm">Coleta de dados por sensores e dispositivos eletrônicos.</li>
@@ -29,7 +29,6 @@ export default function product() {
 
                 </div>
             </div>
-
         </div>
     )
 

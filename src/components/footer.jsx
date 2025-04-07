@@ -2,8 +2,8 @@ import '../index.css'
 
 export default function Footer() {
   return (
-    <div className="container-shape h-[100%] bg-white p-8">      
-      <form className="max-w-4xl">
+    <div className="grid grid-cols-4 lg:grid-cols-8 gap-15 lg:gap-5 h-[100%] bg-white p-8 ">      
+      <form className="col-span-4 max-w-4xl border lg:col-span-4 xl:col-span-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label htmlFor="nome" className="block text-sm mb-1">
@@ -100,6 +100,11 @@ export default function Footer() {
           Enviar
         </button>
       </form>
+      <div className='col-span-4 border lg:col-span-4 xl:col-span-5'>
+        <h1>CONTATO</h1>
+        <h1>ENDEREÇO</h1>
+        <h1>PÁGINAS</h1>
+      </div>
     </div>
   )
 }

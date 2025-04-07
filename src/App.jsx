@@ -1,23 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import NavBar from './components/navbar.jsx'
-import Footer from './components/footer.jsx'
-import Hero from './components/hero.jsx'
-import About from './components/about.jsx'
-import Product from './components/product.jsx'
-import Mission from './components/mission.jsx'
+import Home from './pages/home'
+import About from './pages/about'
 
 
 function App() {
 
   return (
-    <>
-          <NavBar/>
-          <Hero/>
-          <Mission/>
-          <Product/>
-          <About/>
-          <Footer/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/Sobre' element={<About/>}></Route>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
