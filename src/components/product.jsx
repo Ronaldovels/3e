@@ -8,7 +8,7 @@ export default function product() {
         <div className="flex flex-col items-center h-[100%] md:h-[100%] lg:h-[100%] p-10 ">
             <h1 className="text-5xl font-extrabold text-center pb-10 text-black">NOSSOS SERVIÇOS</h1>
 
-            <div className="flex flex-col gap-10  lg:flex-row">
+            <div className="flex flex-col gap-10  lg:flex-row text-[7px]">
                 <button className="card  ">
                     <h1 className="text-center text-blue-900 font-bold text-2xl pt-5">Sistemas de Monitoramento</h1>
                     <p className="text-center lg:text-sm font-semibold"> Os Sistemas de Monitoramento são projetados para serem aplicados em ambientes industriais, de segurança, ambientais, entre outros proporcionando informações vitais para tomadas de decisão
