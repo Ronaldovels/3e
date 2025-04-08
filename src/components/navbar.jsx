@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Logo3E from '../assets/logo.avif'
+import Logo3E from '../assets/logo2.svg'
 import { use, useState } from 'react'
 export default function navbar() {
 
@@ -10,13 +10,13 @@ export default function navbar() {
     }
 
     return (
-        <div className="sticky top-0 z-10 shadow-md text-lg px-10 sticky bg-white">
-            <div className="flex items-center justify-between w-full h-20 ">
+        <div className="sticky top-0 z-10 shadow-md text-lg pr-10 pl-5 sticky bg-white">
+            <div className="flex items-center justify-between w-full h-20 lg:h-25">
                 <div className="flex justify-start flex-1 lg:flex-3">
-                    <a href="/"><img src={Logo3E} alt="Logo" className="h-15 rounded-lg" /></a>
+                    <a href="/"><img src={Logo3E} alt="Logo" className="h-19 lg:h-24 rounded-lg" /></a>
                 </div>
 
-                <div className="hidden md:flex gap-6 flex-1 text-sm font-semibold text-blue-900 text-xs w-[100%]">
+                <div className="hidden md:flex gap-6 flex-1 text-sm lg:text-base font-semibold text-[var(--royal-blue)]  text-xs w-[100%]">
                     <a href="/" className='nav-desk w-[100%]'>Pagina Inicial</a>
                     <a href="/Sobre" className='nav-desk w-[100%]'>Quem Somos</a>
                     <a href="/" className='nav-desk w-[100%]'>Nossas Soluções</a>
@@ -36,7 +36,7 @@ export default function navbar() {
             </div>
 
             <div className={`md:hidden w-full h-120 overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-60' : 'max-h-0'}`}>
-                <div className="flex flex-col items-center py-4 space-y-4 text-base">
+                <div className="flex flex-col items-center py-4 space-y-4 text-base text-[var(--royal-blue)]">
                     <a href="/" className='nav-hover-mob'>Pagina Inicial</a>
                     <a href="/Sobre" className='nav-hover-mob'>Quem Somos</a>
                     <a href="/" className='nav-hover-mob'>Nossas Soluções</a>

@@ -5,10 +5,10 @@
 export default function stats() {
 
     return (
-        <div className="flex justify-evenly items-center w-full h-45 md:h-[100%] lg:h-50 p-10  bg-[#1A5F99]">
-            <p className="text-white text-2xl ">+150 Projetos</p>
-            <p className="text-white text-2xl ">+30 anos de mercado</p>
-            <p className="text-white text-2xl ">9,4 de nota de satisfação</p>
+        <div className="flex justify-evenly h-[100%] p-5  bg-[var(--navy-blue)]">
+            <p className="flex items-center text-white text-sm sm:text-xl md:text-xl lg:text-2xl w-[200px] text-center font-bold">+150 Projetos</p>
+            <p className="flex items-center text-white text-sm sm:text-xl md:text-xl lg:text-2xl w-[200px] text-center font-bold">1º Empresa Jr de Eng. Elétrica do Brasil</p>
+            <p className="flex items-center text-white text-sm sm:text-xl md:text-xl lg:text-2xl w-[200px] text-center font-bold">9,4 de nota de satisfação</p>
         </div>
     )
 

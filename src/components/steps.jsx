@@ -5,7 +5,7 @@
 export default function steps() {
 
     return (
-        <div className="flex flex-col items-center h-[100%] pb-30 bg-black border">
+        <div className="flex flex-col items-center h-[100%] p-30  border">
             <h1 className="text-5xl font-extrabold text-center pb-10 text-black">ETAPAS</h1>
 
             <div className="flex flex-col gap-10  lg:flex-row text-sm">

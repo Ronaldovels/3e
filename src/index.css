@@ -1,7 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-sm: 370px
+}
+
+
 
 :root {
+
+  --light-blue: #7dc7ee;
+  --medium-blue: #4575b3;
+  --deep-blue: #0d619f;
+  --royal-blue: #022382;
+  --navy-blue: #091c6b;
+
   font-family: Poppins, Avenir, Helvetica, Arial, Lato, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -28,7 +40,7 @@
 
 @layer components {
   .nav-hover-mob{
-    @apply hover:scale-[1.1] text-blue-900 duration-300 ease-in-out font-bold border-b
+    @apply hover:scale-[1.1]  text-[var(--royal-blue)] duration-300 ease-in-out font-bold border-b
   }
 
   .nav-desk {
@@ -36,6 +48,21 @@
   }
 
   .card {
-    @apply bg-white w-[50%] border md:w-70 md:h-100 rounded-[15px] flex flex-col items-center justify-center m-auto gap-10 lg:h-120 lg:w-75 md:h-120 md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md lg:p-0 
+    @apply border lg:w-70 w-90 md:w-70 md:h-[300px] rounded-[15px] md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 mb-10 lg:mb-0 border-gray-500 border-2 shadow-md
   }
 }
+
+/*border w-90 m-auto md:w-70 md:h-100 rounded-[15px] md:h-120 md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md */
+
+/*div 1 flex flex-col max-w-[100%] items-center h-[100%] md:h-[100%] lg:h-[100%] p-10 
+
+div2 flex flex-col gap-10 max-w-100 lg:flex-row lg:jusn text-[14px]
+
+
+name input w-full p-2 border border-blue-500 rounded hover:border-blue-900 duration-300 ease-in-out hover:scale-[1.05]
+
+
+name sobrename container grid grid-cols-1 md:grid-cols-2 gap-4 mb-4
+
+
+*/
