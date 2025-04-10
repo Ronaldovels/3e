@@ -1,7 +1,3 @@
-import Logo3E from '../assets/logo.svg'
-
-
-
 
 export default function hero() {
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Logo3E from '../assets/logo2.svg'
+import Logo3E from '../assets/3Ev2.svg'
 import { use, useState } from 'react'
 export default function navbar() {
 
