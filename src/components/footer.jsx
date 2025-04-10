@@ -17,7 +17,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="nome" 
-              className="w-40 sm:w-70 lg:w-65 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
               required
             />
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="sobrenome" 
-              className="w-40 sm:w-70 lg:w-65 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
               required
             />
           </div>
@@ -78,7 +78,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="orcamento" 
-              className="w-40 sm:w-70 lg:w-65 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
               placeholder="Valor em reais"
               required
             />
@@ -91,7 +91,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="prazo" 
-              className="w-40 sm:w-70 lg:w-65 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
+              className="w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
               placeholder="Tempo em meses"
               required
             />
@@ -105,7 +105,7 @@ export default function Footer() {
           Enviar
         </button>
       </form>
-      <div className='col-span-4 border lg:col-span-4 xl:col-span-5 flex flex-col gap-10 p-10'>
+      <div className='col-span-4 lg:col-span-4 xl:col-span-5 flex flex-col gap-10 p-10'>
         <div className='flex flex-col gap-10 md:flex-row'>
           <div className='flex flex-col '>
           

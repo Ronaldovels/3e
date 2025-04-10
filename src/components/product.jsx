@@ -1,62 +1,96 @@
+import { useState } from "react";
+import Foto from '../assets/f.jpg'
 
+export default function AccordionSimples() {
+    const [activeIndex, setActiveIndex] = useState(null);
 
+    const toggleItem = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
 
-
-export default function product() {
+    const servicos = [
+        {
+            titulo: "Sistemas de Monitoramento",
+            conteudo: (
+                <>
+                    <p className="mb-2">
+                        Os Sistemas de Monitoramento são projetados para ambientes industriais, de segurança, ambientais, etc., oferecendo dados para decisões em tempo real.
+                    </p>
+                    <ul className="list-disc pl-5 text-sm text-justify">
+                        <li>Coleta de dados por sensores e dispositivos eletrônicos.</li>
+                        <li>Monitoram variáveis como temperatura, umidade e pressão.</li>
+                        <li>Informações essenciais para decisões rápidas.</li>
+                    </ul>
+                </>
+            ),
+        },
+        {
+            titulo: "Internet das Coisas (IoT)",
+            conteudo: (
+                <p>
+                    A IoT conecta dispositivos à internet, permitindo controle remoto e troca de dados. Pode ser aplicada em sistemas novos ou existentes, trazendo automação e análise de dados em tempo real.
+                </p>
+            ),
+        },
+        {
+            titulo: "Dispositivos Eletrônicos",
+            conteudo: (
+                <p>
+                    Desenvolvimento de sistemas embarcados, como wearables ou controladores industriais, incluindo projeto, prototipagem e implementação.
+                </p>
+            ),
+        },
+        {
+            titulo: "Projetos Fotovoltaicos",
+            conteudo: (
+                <p>
+                    Soluções para integrar placas solares em residências ou empresas, com projetos detalhados e instalação completa, focando na eficiência energética.
+                </p>
+            ),
+        },
+        {
+            titulo: "Eficiência de Maquinário Aprimorada",
+            conteudo: (
+                <p>
+                    Integra sensores e inteligência para melhorar o desempenho e manutenção de máquinas industriais.
+                </p>
+            ),
+        },
+    ];
 
     return (
-        <div className="flex flex-col max-w-full items-center justify-evenly h-full p-10 lg:flex lg:flex-col lg:items-stretch">
-            <h1 className="text-5xl font-extrabold text-center pb-10 text-black">NOSSOS SERVIÇOS</h1>
+        <div className="w-[100%] h-full lg:h-[980px] grid grid-cols-3 mb-6 lg:mb-0">
 
-            <div className="flex flex-col gap-10 w-full lg:flex-row lg:flex-wrap lg:justify-center">
-                <button className="card w-full lg:w-5/12">
-                    <h1 className="text-center text-blue-900 font-bold text-2xl">Sistemas de Monitoramento</h1>
-                    <p className="text-center lg:text-sm font-semibold">
-                        Os Sistemas de Monitoramento são projetados para serem aplicados em ambientes industriais, de segurança, ambientais, entre outros proporcionando informações vitais para tomadas de decisão
-                    </p>
-                    <ul className="flex flex-col items-center max-w-full lg:w-auto">
-                        <li className="list-disc text-justify lg:text-sm">Coleta de dados por sensores e dispositivos eletrônicos.</li>
-                        <li className="list-disc text-justify lg:text-sm">Monitoram variáveis como temperatura, umidade e pressão.</li>
-                        <li className="list-disc text-justify lg:text-sm">Oferecem informações essenciais para decisões em tempo real.</li>
-                    </ul>
-                </button>
-
-                <div className="card w-full lg:w-5/12">
-                    <h1 className="text-center text-blue-900 font-bold text-2xl">Internet das Coisas (IOT)
-                    </h1>
-                    <p className="text-center lg:text-sm font-semibold">
-                        A Internet das Coisas (IoT) refere-se à interconexão de dispositivos através da internet, permitindo a troca de dados e o controle remoto.
-
-                        Essa solução pode ser aplicada a dispositivos já existentes ou incorporada em seu projeto, com o objetivo de oferecer funcionalidades inteligentes ao sistema, como monitoramento remoto, para automação e análise de dados em tempo real.
-
-                        Esse tipo de automação permite que erros no sistema sejam identificados de forma mais eficaz, diminuindo prejuízos.
-                    </p>
-                </div>
-
-                <div className="card w-full lg:w-5/12">
-                    <h1 className="text-center text-blue-900 font-bold text-2xl">Dispositivos eletrônicos</h1>
-                    <p className="text-center lg:text-sm font-semibold">
-                        O Desenvolvimento de Dispositivos Eletrônicos abrange a criação de sistemas embarcados, que são combinações de hardware e software incorporados em produtos.Estes podem ser desde dispositivos vestíveis, como smartwatches, até sistemas de controle industrial, como controladores de máquinas e equipamentos, envolvendo o projeto, prototipagem e implementação de soluções eletrônicas.
-                    </p>
-                </div>
-
-                <div className="card w-full lg:w-5/12">
-                    <h1 className="text-center text-blue-900 font-bold text-2xl">Projetos Fotovoltaicos</h1>
-                    <p className="text-center lg:text-sm font-semibold">
-                        O desenvolvimento de Soluções Fotovoltaicas compreende a elaboração de projetos para a integração de placas fotovoltaicas em residências e empresas, proporcionando soluções customizadas para atender às necessidades específicas de cada cliente.
-                        Nossa abordagem envolve a criação de esquemáticos detalhados e a implementação de sistemas eficientes, visando maximizar a geração de energia solar.
-                        Nosso processo abrange desde a concepção do projeto até a instalação prática das placas, assegurando uma transição suave para uma fonte de energia limpa e sustentável.
-                    </p>
-                </div>
-
-                <div className="card w-full lg:w-5/12">
-                    <h1 className="text-center text-blue-900 font-bold text-2xl">Eficiência de Maquinário Aprimorada</h1>
-                    <p className="text-center lg:text-sm font-semibold">
-                        A Melhora de Eficiência de Maquinário envolve a aplicação de sistemas embarcados para otimizar o desempenho, produtividade e a qualidade de equipamentos industriais.Através da integração de sensores, atuadores e algoritmos inteligentes, é possível monitorar o funcionamento das máquinas, identificar padrões de uso e realizar ajustes.
-                    </p>
+            <div className="col-span-3 lg:col-span-1 w-full p-6 ">
+                <div className="flex flex-col items-center">
+                    <h1 className="text-5xl lg:text-7xl font-extrabold text-center pb-10 text-[var(--navy-blue)]">NOSSOS SERVIÇOS</h1>
+                    <div className="flex flex-col gap-4 2xl:gap-15 lg:gap-15">
+                        {servicos.map((servico, index) => (
+                            <div key={index} className="border border-gray-300 rounded overflow-hidden transition-all duration-300">
+                                <button
+                                    onClick={() => toggleItem(index)}
+                                    className="w-full px-4 py-3 bg-blue-100 hover:bg-blue-200 text-left font-bold text-blue-900 text-lg flex justify-between items-center "
+                                >
+                                    {servico.titulo}
+                                    <span className="text-xl">{activeIndex === index ? "−" : "+"}</span>
+                                </button>
+                                <div
+                                    className={`transition-all duration-300 px-4 overflow-hidden ${activeIndex === index ? "max-h-[1000px] py-4" : "max-h-0"
+                                        }`}
+                                >
+                                    <div className="text-sm text-gray-700">{servico.conteudo}</div>
+                                </div>
+                                
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
-    )
 
+
+            <div className="col-span-2 h-full w-full hidden lg:block">
+                <img src={Foto} alt="" className="h-full w-full object-cover" />
+            </div>
+        </div>
+    );
 }

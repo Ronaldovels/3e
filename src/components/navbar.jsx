@@ -38,7 +38,7 @@ export default function navbar() {
             <div className={`md:hidden w-full h-120 overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-60' : 'max-h-0'}`}>
                 <div className="flex flex-col items-center py-4 space-y-4 text-base text-[var(--royal-blue)]">
                     <a href="/" className='nav-hover-mob'>Pagina Inicial</a>
-                    <a href="/Sobre" className='nav-hover-mob'>Quem Somos</a>
+                    <a href="/" className='nav-hover-mob'>Quem Somos</a>
                     <a href="/" className='nav-hover-mob'>Nossas Soluções</a>
                     <a href="/" className='nav-hover-mob'>Contato</a>
                     <a href="/" className='nav-hover-mob'>Blog</a>
