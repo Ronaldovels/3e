@@ -11,11 +11,6 @@ export default defineConfig({
   server: {
     host: true
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
-  ,
   plugins: [
     react(),
     tailwindcss()
