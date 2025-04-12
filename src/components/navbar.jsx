@@ -19,7 +19,7 @@ export default function navbar() {
                 <div className="hidden md:flex gap-6 flex-1 text-sm lg:text-base font-semibold text-[var(--royal-blue)]  text-xs w-[100%]">
                     <a href="/" className='nav-desk w-[100%]'>Pagina Inicial</a>
                     <a href="/Sobre" className='nav-desk w-[100%]'>Quem Somos</a>
-                    <a href="/" className='nav-desk w-[100%]'>Nossas Soluções</a>
+                    
                     <a href="/" className='nav-desk w-[100%]'>Contato</a>
                     <a href="/" className='nav-desk w-[100%]'>Blog</a>
                 </div>
@@ -35,11 +35,10 @@ export default function navbar() {
                 </button>
             </div>
 
-            <div className={`md:hidden w-full h-120 overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-60' : 'max-h-0'}`}>
+            <div className={`md:hidden w-full overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-50' : 'max-h-0'}`}>
                 <div className="flex flex-col items-center py-4 space-y-4 text-base text-[var(--royal-blue)]">
                     <a href="/" className='nav-hover-mob'>Pagina Inicial</a>
                     <a href="/" className='nav-hover-mob'>Quem Somos</a>
-                    <a href="/" className='nav-hover-mob'>Nossas Soluções</a>
                     <a href="/" className='nav-hover-mob'>Contato</a>
                     <a href="/" className='nav-hover-mob'>Blog</a>
                 </div>
