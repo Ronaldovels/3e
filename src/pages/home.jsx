@@ -5,6 +5,7 @@ import Steps from '../components/steps.jsx'
 import Product from '../components/product.jsx'
 import Stats from '../components/stats.jsx'
 import Wcu from '../components/diferencials.jsx'
+import Foto from '../assets/f.jpg'
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         href="https://wa.me/message/AN7CBTXY3WWXO1"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 rounded-full p-4 shadow-lg z-50"
+        className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 rounded-full p-4 shadow-lg z-50 duration-300 ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +29,7 @@ export default function Home() {
       </a>
 
       <NavBar />
+  
       <Hero />
       <Stats />
       <Product />

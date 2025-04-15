@@ -1,7 +1,10 @@
 
+
+
 export default function hero() {
 
     return (
+        
         <div className="flex flex-row h-[405px]">
             <div className="flex flex-col gap-5 pl-5 pt-10">
                 <h1 className='max-sm:text-5xl text-7xl font-extrabold  lg:w-[90%] xl:w-[100%]'>CONCRETIZE SUA IDEIA  

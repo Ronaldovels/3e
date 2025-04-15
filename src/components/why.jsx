@@ -1,6 +1,6 @@
 
 
-export default function wwd () {
+export default function why () {
 
     return (
         <div>

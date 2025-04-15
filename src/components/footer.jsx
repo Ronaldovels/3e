@@ -9,15 +9,15 @@ export default function Footer() {
   return (
     <div className="grid grid-cols-4 lg:grid-cols-8 gap-15 lg:gap-5 h-[100%] bg-[var(--navy-blue)] p-8 text-white">      
       <form className="col-span-4 max-w-4xl lg:col-span-4 xl:col-span-3 ">
-        <div className="flex justify-between">
-          <div clas>
+        <div className="flex justify-between mb-3">
+          <div className=''>
             <label htmlFor="nome" className="block text-sm mb-1">
               Nome <span>*</span>
             </label>
             <input 
               type="text" 
               id="nome" 
-              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500  hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
               required
             />
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="sobrenome" 
-              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500  hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
               required
             />
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
           <input 
             type="tel" 
             id="telefone" 
-            className="w-full p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+            className="w-full p-2 border border-blue-500  hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
             required
           />
         </div>
@@ -54,7 +54,7 @@ export default function Footer() {
           <input 
             type="email" 
             id="email" 
-            className="w-full p-2 border border-blue-500 rounded hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+            className="w-full p-2 border border-blue-500  hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
             required
           />
         </div>
@@ -65,7 +65,7 @@ export default function Footer() {
           </label>
           <textarea 
             id="projeto" 
-            className="w-full p-2 border border-blue-500 rounded h-24 hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
+            className="w-full p-2 border border-blue-500  h-24 hover:border-[var(-deep-blue)] duration-300 ease-in-out hover:scale-[1.05]" 
             required
           ></textarea>
         </div>
@@ -78,7 +78,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="orcamento" 
-              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
+              className=" w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500  hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
               placeholder="Valor em reais"
               required
             />
@@ -91,7 +91,7 @@ export default function Footer() {
             <input 
               type="text" 
               id="prazo" 
-              className="w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500 rounded hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
+              className="w-40 sm:w-70 lg:w-55 xl:w-55 2xl:w-80 p-2 border border-blue-500  hover:border-blue-900 text-white duration-300 ease-in-out hover:scale-[1.05]" 
               placeholder="Tempo em meses"
               required
             />
@@ -100,7 +100,7 @@ export default function Footer() {
         
         <button 
           type="submit" 
-          className="w-full mt-5 bg-[var(--royal-blue)] text-white py-3 font-medium rounded duration-300 hover:bg-blue-500 ease-in-out hover:scale-[1.05]"
+          className="w-full mt-5 bg-[var(--royal-blue)] text-white py-3 font-medium  duration-300 hover:bg-blue-500 ease-in-out hover:scale-[1.05]"
         >
           Enviar
         </button>
