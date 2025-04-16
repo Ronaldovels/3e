@@ -1,7 +1,7 @@
 import NavBar from '../components/navbar.jsx'
 import Footer from '../components/footer.jsx'
 import About from '../components/about.jsx'
-import Mission from '../components/Mission.jsx'
+import Mission from '../components/mission.jsx'
 import Why from '../components/why.jsx'
 
 
