@@ -11,7 +11,7 @@ export default function steps() {
 
 
             <div className="flex flex-col gap-10  lg:flex-row text-sm ">
-                <div className="relative bg-white rounded-lg shadow-md pt-16 px-6 pb-6 border-t-8 shadow-xl border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
+                <div className="relative bg-white rounded-lg shadow-md shadow-blue-900 pt-16 px-6 pb-6 border-t-8  border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white border-4 border-[var(--royal-blue)] rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="#091c6b" viewBox="0 0 24 24">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm1 7H8V8h7zm0 2H8v1h7zm0 3H8v1h7zm-2-9V3.5L18.5 9H15a1 1 0 0 1-1-1z" />
@@ -29,7 +29,7 @@ export default function steps() {
                         <li>FLUXOGRAMA DO ALGORITMO</li>
                     </ol>
                 </div>
-                <div className="relative bg-white rounded-lg shadow-md pt-16 px-6 pb-6 border-t-8 shadow-xl border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
+                <div className="relative bg-white rounded-lg shadow-md shadow-blue-900 pt-16 px-6 pb-6 border-t-8 border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white border-4 border-[var(--royal-blue)] rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="#091c6b" viewBox="0 0 24 24">
                             <path d="M12 2a1 1 0 0 0-1 1v1.09A7.004 7.004 0 0 0 5 11v5H4a1 1 0 0 0 0 2h1v1a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-1h1a1 1 0 0 0 0-2h-1v-5a7.004 7.004 0 0 0-6-6.91V3a1 1 0 0 0-1-1zm-4 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm6 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-6 4h6a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2z" />
@@ -44,7 +44,7 @@ export default function steps() {
                         <li>DIAGRAMA FINAL DE MONTAGEM DO CIRCUITO OU PCB</li>
                     </ol>
                 </div>
-                <div className="relative bg-white rounded-lg shadow-md pt-16 px-6 pb-6 border-t-8 shadow-xl border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
+                <div className="relative bg-white rounded-lg shadow-md shadow-blue-900 pt-16 px-6 pb-6 border-t-8 border-[var(--royal-blue)] w-80 sm:w-full max-w-sm mx-auto">
                     <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-white border-4 border-[var(--royal-blue)] rounded-full flex items-center justify-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
