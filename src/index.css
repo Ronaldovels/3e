@@ -50,19 +50,9 @@
   .card {
     @apply border lg:w-70 w-90 md:w-70 md:h-[300px] rounded-[15px] md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 mb-10 lg:mb-0 border-gray-500 border-2 shadow-md
   }
+
+  .diferential-card {
+    @apply border-3 border-white w-full h-full p-2 hover:scale-[1.01] duration-300 ease-in-out focus:scale-[1.01] active:scale-[1.01]
+  }
 }
 
-/*border w-90 m-auto md:w-70 md:h-100 rounded-[15px] md:h-120 md:w-120 bg-white hover:scale-105 duration-300 ease-in-out p-10 border-gray-500 border-2 shadow-md */
-
-/*div 1 flex flex-col max-w-[100%] items-center h-[100%] md:h-[100%] lg:h-[100%] p-10 
-
-div2 flex flex-col gap-10 max-w-100 lg:flex-row lg:jusn text-[14px]
-
-
-name input w-full p-2 border border-blue-500 rounded hover:border-blue-900 duration-300 ease-in-out hover:scale-[1.05]
-
-
-name sobrename container grid grid-cols-1 md:grid-cols-2 gap-4 mb-4
-
-
-*/

@@ -3,7 +3,7 @@
 export default function mission () {
 
     return (
-        <div className='mt-10 w-[100%]  flex flex-col justify-between'>
+        <div className='mt-10 mb-10 w-[100%]  flex flex-col justify-between'>
                     <div className="flex justify-evenly">
 
                         <div className=' flex flex-col items-center'>

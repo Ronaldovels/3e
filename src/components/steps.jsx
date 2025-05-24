@@ -5,7 +5,7 @@
 export default function steps() {
 
     return (
-        <div className="flex flex-col items-center h-[100%] p-30  ">
+        <div className="flex flex-col items-center h-[100%] p-20  ">
             <h1 className="text-7xl font-extrabold text-center pb-20 text-[var(--navy-blue)]">ETAPAS</h1>
 
 
