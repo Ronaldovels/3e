@@ -1,12 +1,12 @@
 import { calculateReadTime } from '../utils/calculatedReadTime.js';
 
-import casaInteligenteImg from '../assets/casa-inteligente.jpg';
-import diagramaIotImg from '../assets/diagrama-iot.jpg';
-import tensoesImg from '../assets/casa-inteligente.jpg';
-import medidorEnergiaImg from '../assets/casa-inteligente.jpg';
-import nvidiaLogoImg from '../assets/nvidia-logo.jpg';
-import geforceImg from '../assets/casa-inteligente.jpg';
-import cudaImg from '../assets/casa-inteligente.jpg';
+import casaInteligenteImg from '../assets/casa-inteligente.webp';
+import diagramaIotImg from '../assets/diagrama-iot.webp';
+import tensoesImg from '../assets/casa-inteligente.webp';
+import medidorEnergiaImg from '../assets/casa-inteligente.webp';
+import nvidiaLogoImg from '../assets/nvidia-logo.webp';
+import geforceImg from '../assets/casa-inteligente.webp';
+import cudaImg from '../assets/casa-inteligente.webp';
 
 const rawPosts = [
   // POST 1: Casa Inteligente com IoT

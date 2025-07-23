@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="sticky top-0 z-50 shadow-md text-lg pr-10 pl-5 sticky bg-white">
             <div className="flex items-center justify-between w-full h-20 lg:h-25">
                 <div className="flex justify-start flex-1 lg:flex-3">
-                    <a href="/"><img src={Logo3E} alt="Logo" className="h-19 lg:h-24 rounded-lg ml-2" /></a>
+                    <a href="/"><img src={Logo3E} alt="3E Logo" className="h-19 w-26 lg:h-24 rounded-lg ml-2" width={26} height={19}/></a>
                 </div>
 
                 <div className="hidden md:flex gap-6 flex-1 text-sm lg:text-base font-semibold text-[var(--royal-blue)]  text-xs w-[100%]">

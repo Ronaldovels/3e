@@ -1,9 +1,9 @@
-import bg from "../assets/f.jpg"
+import bg from "../assets/f.webp"
 
 export default function Hero() {
     return (
         <div className="relative h-[405px] bg-black z-5">
-            {/* Background com blur */}
+            
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-35" // A classe de URL foi removida daqui
                 style={{ backgroundImage: `url(${bg})` }} // E adicionada aqui como estilo inline

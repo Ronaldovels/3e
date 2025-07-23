@@ -1,56 +1,64 @@
-import '../index.css'
-import instaIcon from '../assets/instagram.png'
-import faceIcon from '../assets/facebook.png'
-import linkIcon from '../assets/linkedin.png'
-import whatIcon from '../assets/whatsapp.png'
-import mailIcon from '../assets/mail.png'
-import Logo3E from '../assets/3EW.svg'
+import React from 'react';
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+
+import '../index.css';
+import Logo3E from '../assets/3EW.svg';
+
 
 export default function Footer() {
+  const iconStyle = "h-5 w-5 text-white transition-transform duration-200 group-hover:scale-110";
+  const linkStyle = "flex items-center gap-2 text-white hover:text-gray-300 group";
+
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-8 gap-15 lg:gap-5 h-[100%] bg-[var(--navy-blue)] p-8 text-white relative z-4">      
-      <div className="col-span-4 max-w-4xl lg:col-span-4 xl:col-span-3 ">
-      <div className='flex-center justify-start'>
-        <img src={Logo3E} alt="Logo" className="h-20 lg:h-30 rounded-lg m-0"/>
-        <h1 className='text-3xl'>3E <br />UNICAMP</h1>
-        
-      </div>
-      <div className=' md:pt-10 flex justify-start text-[10px]'>
-          <p>© 2025 3E. Todos os direitos reservados.</p>
+    <div className="grid grid-cols-1 md:grid-cols-8 gap-8 bg-[var(--navy-blue)] p-8 text-white relative z-4">
+      
+      {/* Coluna da Logo */}
+      <div className="col-span-1 md:col-span-3">
+        <div className='flex items-center gap-4'>
+          <img src={Logo3E} alt="Logo da 3E Unicamp em branco" className="h-20 w-30 lg:h-24" width={30} height={20}/>
+          <h1 className='text-3xl font-bold'>3E <br />UNICAMP</h1>
         </div>
-
+        <div className='mt-6 text-xs text-gray-400'>
+          <p>© 2025 3E Unicamp. Todos os direitos reservados.</p>
+        </div>
       </div>
-      <div className='col-span-4 lg:col-span-4 xl:col-span-5 flex flex-col gap-10 p-10'>
-        <div className='flex flex-col gap-10 md:flex-row'>
-          <div className='flex flex-col '>
-          
-            <h1 className='text-2xl font-bold'>CONTATO</h1>
-            <a className='flex gap-1' href="mailto:contato@3eunicamp.com" target='_blank'><img className='h-5' src={mailIcon} alt="" />contato@3eunicamp.com</a>
-            <a className="flex gap-1" href="https://wa.me/message/AN7CBTXY3WWXO1" target='_blank'><img className='h-5' src={whatIcon} alt="" />(19) 3521-3843</a>
-            <a className='flex gap-1'  href="https://www.instagram.com/3e.unicamp/" target='_blank'>
-            <img className='h-5' src={instaIcon} />3e.unicamp</a>
-            <a className='flex gap-1' href="https://www.facebook.com/jr3eunicamp/" target='_blank'>
-            <img className='h-5' src={faceIcon} alt="" />jr3eunicamp</a>
-            <a className='flex gap-1' href="https://www.linkedin.com/company/3e-unicamp/" target='_blank'>
-            <img className='h-5' src={linkIcon} alt="" />3e-unicamp</a>
-          </div>
-          <div className='flex flex-col'>
-            <h1 className='text-2xl font-bold'>ENDEREÇO</h1>
-            <a href="https://www.google.com/maps?client=opera-gx&hs=22z&sca_esv=edec2e4b4572a4c0&output=search&q=R.+Josué+de+Castro,+123+-+Cidade+Universitária,+Campinas+-+SP,+13083-861&source=lnms&fbs=ABzOT_BYhiZpMrUAF0c9tORwPGlssxTeO7BMOlalbdyQXag72r1qnNd-MghSp-MLF7ZupKLNJpA1I8VZ0HfUeA-4UgdX-97nDf7oc7TtZEVlTkuMpD2c3ypTiXj-VdV8V1i81GToPWFJj16s_daCO8XAB8WhxVoKtlC84nPvJRz2PVQ0NiGclmRPxu70wVG1PsEVa9qmnOofHkcQ37xRKFhWG2YDw03wzg&entry=mc&ved=1t:200715&ictx=111" target='_blank' className='md:w-40'>R. Josué de Castro, 123 - Cidade Universitária, Campinas - SP, 13083-861</a>
-          </div>
+
+      {/* Coluna de Contato e Endereço */}
+      <div className='col-span-1 md:col-span-5 flex flex-col md:flex-row justify-start gap-10'>
+        {/* Contatos */}
+        <div className='flex flex-col gap-2'>
+          <h2 className='text-2xl font-bold mb-2'>CONTATO</h2>
+          <a className={linkStyle} href="mailto:contato@3eunicamp.com" target='_blank' rel="noopener noreferrer">
+            <FaEnvelope className={iconStyle} />
+            contato@3eunicamp.com
+          </a>
+          <a className={linkStyle} href="https://wa.me/message/AN7CBTXY3WWXO1" target='_blank' rel="noopener noreferrer">
+            <FaWhatsapp className={iconStyle} />
+            (19) 3521-3843
+          </a>
+          <a className={linkStyle} href="https://www.instagram.com/3e.unicamp/" target='_blank' rel="noopener noreferrer">
+            <FaInstagram className={iconStyle} />
+            3e.unicamp
+          </a>
+          <a className={linkStyle} href="https://www.facebook.com/jr3eunicamp/" target='_blank' rel="noopener noreferrer">
+            <FaFacebookF className={iconStyle} />
+            jr3eunicamp
+          </a>
+          <a className={linkStyle} href="https://www.linkedin.com/company/3e-unicamp/" target='_blank' rel="noopener noreferrer">
+            <FaLinkedinIn className={iconStyle} />
+            3e-unicamp
+          </a>
         </div>
         
-
-        
-
-        
+        {/* Endereço */}
+        <div className='flex flex-col'>
+          <h2 className='text-2xl font-bold mb-2'>ENDEREÇO</h2>
+          <a href="https://maps.app.goo.gl/uX3f2Z8VbYJv9n9j7" target='_blank' rel="noopener noreferrer" className='max-w-xs hover:text-gray-300 w-60'>
+            R. Josué de Castro, 123 - Cidade Universitária, Campinas - SP, 13083-861
+          </a>
+        </div>
       </div>
       
     </div>
-  )
+  );
 }
-
-
-/*<div className=''>
-        <h2 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--medium-blue)] to-[var(--deep-blue)]'>Contribuindo para o desenvolvimento de estudantes de engenharia elétrica desde 1990</h2>
-        </div>*/

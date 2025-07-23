@@ -1,6 +1,6 @@
 import React from 'react';
 // Use fotos reais da equipe ou placeholders
-import placeholder from '../../assets/f.jpg'; // Reutilizando sua foto como placeholder
+import placeholder from '../../assets/f.webp'; // Reutilizando sua foto como placeholder
 
 const teamMembers = [
   { name: 'Nome do Presidente', role: 'Presidente', image: placeholder },

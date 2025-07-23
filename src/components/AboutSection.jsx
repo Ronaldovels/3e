@@ -1,4 +1,4 @@
-import Foto2 from '../assets/f2.jpg'
+import Foto2 from '../assets/f2.webp'
 
 
 
@@ -7,7 +7,7 @@ export default function AboutSection() {
         <div className="w-[100%] h-[683px] grid grid-cols-4">
 
             <div className="col-span-4 lg:col-span-2 xl:col-span-2 h-full w-full lg:block overflow-hidden">
-                <img src={Foto2} alt="" className="w-full h-full object-cover rounded" />
+                <img src={Foto2} alt="Foto de membro da 3E" className="w-full h-full object-cover rounded" />
             </div>
 
             <div className="col-span-4 lg:col-span-2 xl:col-span-2 w-full p-6 flex flex-col items-center">

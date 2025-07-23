@@ -1,12 +1,12 @@
 import React from 'react';
 // TODO: Substituir pela imagem do campus da Unicamp ou da FEEC
-import unicampImg from '../../assets/f2.jpg';
+import unicampImg from '../../assets/f2.webp';
 
 export default function LocationSection() {
   return (
     <div className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Coluna de Texto */}
+       
         <div>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-[var(--navy-blue)] mb-6">
             Onde estamos?

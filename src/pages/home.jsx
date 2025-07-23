@@ -17,6 +17,8 @@ export default function Home() {
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 rounded-full p-4 shadow-lg z-50 duration-300 ease-in-out"
       >
+        <span className="sr-only">Fale conosco no WhatsApp</span>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="white"
