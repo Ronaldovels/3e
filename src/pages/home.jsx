@@ -1,13 +1,11 @@
-import NavBar from '../components/navbar.jsx'
-import Footer from '../components/footer.jsx'
-import Hero from '../components/hero.jsx'
-import Steps from '../components/steps.jsx'
-import Product from '../components/product.jsx'
-import Stats from '../components/stats.jsx'
-import Wcu from '../components/diferencials.jsx'
-import Reviews from '../components/reviews.jsx'
-import Foto from '../assets/f.jpg'
-
+import NavBar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx'
+import Hero from '../components/Hero.jsx'
+import Steps from '../components/Steps.jsx'
+import Product from '../components/Product.jsx'
+import Stats from '../components/Stats.jsx'
+import Diferencials from '../components/Diferencials.jsx'
+import Reviews from '../components/Reviews.jsx'
 
 export default function Home() {
 
@@ -34,7 +32,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Product />
-      <Wcu />
+      <Diferencials />
       <Steps />
       <Reviews />
       <Footer />

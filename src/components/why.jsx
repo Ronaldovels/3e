@@ -1,6 +1,6 @@
 
 
-export default function why () {
+export default function Why () {
 
     return (
         <div>

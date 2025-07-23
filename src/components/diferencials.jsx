@@ -1,4 +1,4 @@
-export default function wcu() {
+export default function Diferencials() {
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 h-[100%] w-full gap-[5px] p-[5px] bg-white">

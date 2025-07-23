@@ -1,6 +1,7 @@
 import Logo3E from '../assets/3Ev2.svg'
-import { use, useState } from 'react'
-export default function navbar() {
+import { useState } from 'react'
+
+export default function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 

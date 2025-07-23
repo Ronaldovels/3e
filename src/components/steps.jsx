@@ -2,7 +2,7 @@
 
 
 
-export default function steps() {
+export default function Steps() {
 
     return (
         <div className="flex flex-col items-center h-[100%] p-20  ">

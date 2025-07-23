@@ -2,7 +2,7 @@ import Foto2 from '../assets/f2.jpg'
 
 
 
-export default function about() {
+export default function AboutSection() {
     return (
         <div className="w-[100%] h-[683px] grid grid-cols-4">
 
